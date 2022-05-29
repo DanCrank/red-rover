@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Put the rover in bootloader mode:"
+echo "(double-click the reset button on the M4 board, NeoPixel should be GREEN)"
+read -p "Press any key to continue... " -n1 -s
+echo
+echo "Building and uploading..."
+cargo hf2 --release
+echo "Done!"
